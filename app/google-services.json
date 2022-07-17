@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1086282558667",
+    "firebase_url": "https://school-66d84-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "school-66d84",
+    "storage_bucket": "school-66d84.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086282558667:android:c6ebb35c960576e1af3f4e",
+        "android_client_info": {
+          "package_name": "com.school.jljapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086282558667-049vagnipj083cnk274fr39a1u5p9nch.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSw6iCgyIV0TFCFtoy9QuNiSmJeU36KoI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086282558667-049vagnipj083cnk274fr39a1u5p9nch.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
