@@ -43,6 +43,12 @@
             android:text="Age" />
 
         <Button
+            android:id="@+id/functionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Functions" />
+
+        <Button
             android:id="@+id/logoutButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

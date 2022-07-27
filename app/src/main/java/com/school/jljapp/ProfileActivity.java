@@ -19,7 +19,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class ProfileActivity extends AppCompatActivity {
-    private Button logout;
+    private Button logout, functionsButton;
     private FirebaseUser user;
     private DatabaseReference reference;
     private String userId;
@@ -30,6 +30,14 @@ public class ProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
 
         logout = (Button) findViewById(R.id.logoutButton);
+        functionsButton = (Button) findViewById(R.id.functionButton);
+
+        functionsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ProfileActivity.this, MyWebView.class));
+            }
+        });
 
         logout.setOnClickListener(new View.OnClickListener(){
             @Override
