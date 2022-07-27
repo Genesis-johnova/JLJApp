@@ -4,23 +4,27 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MyWebView extends AppCompatActivity {
 
     private TextView user;
     private Button btnpc, btnperi, btnBrowser, btnlocate;
+    private ImageView banner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_web_view);
 
+        banner = findViewById(R.id.imageView2);
         user = findViewById(R.id.textView2);
         btnpc = findViewById(R.id.pcbutton);
         btnperi = findViewById(R.id.peributton);
@@ -28,7 +32,7 @@ public class MyWebView extends AppCompatActivity {
         btnBrowser = findViewById(R.id.browserbutton);
         Intent i = getIntent();
         String username = i.getStringExtra("Username");
-        user.setText("Hello " + username);
+        // user.setText("Hello " + username);
 
         btnpc.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -91,5 +95,17 @@ public class MyWebView extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+
+        banner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(),ProfileActivity.class);
+                startActivity(i);
+            }
+        });
+
+
+
     }
 }

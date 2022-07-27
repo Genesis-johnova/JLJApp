@@ -53,7 +53,7 @@ public class ProfileActivity extends AppCompatActivity {
         userId = user.getUid();
 
         final TextView greetingTextView = (TextView) findViewById(R.id.userGreeting);
-        final TextView fullNameTextView = (TextView) findViewById(R.id.userFullName);
+       // final TextView fullNameTextView = (TextView) findViewById(R.id.userFullName);
         final TextView emailTextView = (TextView) findViewById(R.id.userEmailAddress);
         final TextView ageTextView = (TextView) findViewById(R.id.userAge);
 
@@ -68,9 +68,9 @@ public class ProfileActivity extends AppCompatActivity {
                     String age = userProfile.age;
 
                     greetingTextView.setText("Welcome, " + fullName + "!");
-                    fullNameTextView.setText(fullName);
-                    emailTextView.setText(email);
-                    ageTextView.setText(age);
+                    // fullNameTextView.setText(fullName);
+                    emailTextView.setText("Email: " + email);
+                    ageTextView.setText("Age: " + age);
 
                 }
             }
